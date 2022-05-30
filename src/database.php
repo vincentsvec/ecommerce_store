@@ -1,6 +1,9 @@
 <?php
+    $host = '' // fill host
+    $user = '' // fill user
+
     // Create connection
-    $conn = new mysqli('localhost', 'root');
+    $conn = new mysqli($host, $user);
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
